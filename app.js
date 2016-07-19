@@ -10,6 +10,8 @@ app.set('view engine', 'ejs'); // use either jade or ejs
 // instruct express to server up static assets
 app.use(express.static('public'));
 app.use(expressLayouts);
+app.use('/js',express.static(path.join(__dirname, 'js/')));
+app.use('/img',express.static(path.join(__dirname, 'img/')));
 
 // set routes
 app.get('/', function(req, res) {
