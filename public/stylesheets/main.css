@@ -1,3 +1,222 @@
+body {
+  min-width: 780px;
+  margin: 0;
+  background-color: #D8D8D8; }
+
 header {
+  padding-top: 10px;
+  text-align: right;
+  background-color: white;
+  height: 30px; }
+
+footer {
+  background-color: #000099;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  color: #F0F0F0;
+  padding: 10px 0 10px 0;
+  overflow: hidden; }
+
+.bottom-right-link {
+  padding-bottom: 15px;
+  border-bottom: 4px solid #0066ff; }
+
+.copyright {
+  font-size: 12px;
+  margin-left: 40px; }
+
+.header-link {
+  font-size: 12px;
+  font-weight: bold;
   color: blue;
-  font-size: 20px; }
+  text-decoration: none;
+  padding-right: 10px; }
+
+.header-link:visited {
+  color: blue; }
+
+.header-link:hover {
+  color: #3399ff; }
+
+.introduction {
+  font-size: 40px;
+  color: blue;
+  margin-top: 0;
+  margin-left: 80px; }
+
+.intro-form {
+  font-size: 40px;
+  color: gray;
+  text-decoration: underline; }
+
+.footer-link-container {
+  position: relative;
+  float: right; }
+
+.footer-link {
+  position: relative;
+  text-align: right;
+  font-size: 12px;
+  color: #F0F0F0;
+  text-decoration: none; }
+
+.footer-link:visited {
+  color: #F0F0F0; }
+
+.footer-link:hover {
+  color: #3399ff; }
+
+.site-map-header {
+  padding-top: 20px;
+  text-align: right;
+  height: 30px; }
+
+.site-map-header-container {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  border-bottom: 1px #C8C8C8 solid;
+  right: 80px; }
+
+.site-map-header-link {
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 15px; }
+
+.site-map-header-link:visited {
+  color: #3399ff; }
+
+.site-map-header-link:hover {
+  color: blue; }
+
+.site-map-footer {
+  position: absolute;
+  bottom: 20px;
+  background-color: blue;
+  width: 100%;
+  height: 300px;
+  color: #F0F0F0;
+  padding-left: 40px;
+  overflow: auto; }
+
+.site-map-footer-column {
+  display: inline-block;
+  position: relative;
+  padding-top: 40px;
+  padding-left: 30px;
+  width: 100px;
+  vertical-align: top; }
+
+.site-map-footer-column-title {
+  font-size: 14px; }
+
+.site-map-footer-column-list {
+  list-style-type: none;
+  font-size: 10px;
+  padding-left: 0; }
+
+.site-map-footer-column-small {
+  display: none; }
+
+.social-media-icon {
+  height: 15px;
+  padding-right: 15px; }
+
+.social-media-small {
+  display: none; }
+
+.duke-icon-box {
+  position: relative;
+  bottom: 65px;
+  left: 80px;
+  background-color: blue;
+  width: 60px;
+  padding: 7px 5px 7px 5px;
+  border: 2px solid white; }
+
+.duke-icon-box-footer {
+  position: relative;
+  background-color: blue;
+  top: 10px;
+  width: 60px;
+  padding: 7px 5px 7px 5px;
+  border: 2px solid white; }
+
+.last-link {
+  padding-right: 80px; }
+
+#last-site-map-header-link {
+  color: #3399ff;
+  font-size: 15px;
+  text-decoration: none;
+  padding-right: 0; }
+
+#last-site-map-header-link:visited {
+  color: #3399ff; }
+
+#last-site-map-header-link:hover {
+  color: blue; }
+
+#icon-box-title {
+  color: white;
+  text-align: center;
+  margin-left: 2px !important;
+  font-size: 20px;
+  border-bottom: 1px solid white;
+  padding: 0; }
+
+#icon-box-second-title {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  margin: 2px 0 2px 0; }
+
+#icon-box-subtitle {
+  color: white;
+  text-align: center;
+  font-size: 6px;
+  margin-top: 2px; }
+
+@media only screen and (max-width: 736px) {
+  /* Currently window goes to scrolling
+	after certain size. If window shrinks below this size, 
+	add 3-lines (hamburger) link instead of top bar, 
+	shrink bottom bar*/
+  header {
+    display: none; }
+  .site-map-header {
+    display: none; }
+  .duke-icon-box {
+    position: relative;
+    top: 5px;
+    text-align: center;
+    background-color: blue;
+    width: 60%;
+    padding: 7px 5px 7px 5px;
+    border: 2px solid white; }
+  .main-site-container {
+    max-width: 400px;
+    text-align: center;
+    margin: 0; }
+  .site-map-footer {
+    text-align: center; }
+  .site-map-footer-column {
+    display: none; }
+  .site-map-footer-column-small {
+    display: inline-block;
+    font-size: 20px;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 30px;
+    margin-right: 30px;
+    width: 150px;
+    vertical-align: top; }
+  .site-map-footer-column-list-small {
+    list-style-type: none;
+    padding-left: 0; }
+  .social-media-small {
+    display: block;
+    text-align: center;
+    padding-right: 30px; } }
